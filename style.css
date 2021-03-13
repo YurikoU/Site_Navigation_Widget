@@ -1,0 +1,135 @@
+html
+{
+  font-family: "Gill Sans", sans-serif; /* The font is "Gill Sans" or sans-serifot. */
+  font-style: normal; /* The font is not italic. */
+  background-color: #B2EBF2;
+  color: #009eb3;
+  height: 100%; /* This is for the footer to place at the very bottom. */
+  margin: 5px 0px 3px 0px; /* Set the margins for top, right, bottom, left to 5px 20px 3px 20px. */
+}
+
+body
+{
+  display: flex; /* This is for the footer to place at the very bottom. */
+  flex-direction: column; /* This is for the footer to place at the very bottom. */
+  height: 100%; /* This is for the footer to place at the very bottom. */
+  margin: 0;
+}
+
+header
+{
+  width: 100%;
+}
+
+h1
+{
+  font-weight: bold;
+  font-size: 36px;
+  padding-left: 103px;
+}
+
+h2
+{
+  font-weight: bold;
+
+}
+
+main
+{
+  flex: 1; /* This is for the footer to place at the very bottom. */
+  margin: 17px 165px 0px 165px;
+}
+
+footer
+{
+  margin-left: 165px;
+  margin-right: 165px;
+}
+
+nav
+{
+  background-color: #ff6232;
+}
+
+li
+{
+  list-style-type: none;  /* Delete dots of <li> elements. */
+}
+
+a
+{
+  text-decoration: none;  /* Delete underlines of <a> elements. */
+  color: #911e01;
+}
+
+.first-lists
+{
+  display: flex;  /* Place the first-level links horizontally. */
+  justify-content: space-around;  /* Place each first-level link at even intervals. */
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);  /* Set the light shadow in the y-axis direction for the first-level links. */
+  line-height: 2.2;
+}
+
+.first-lists > li > a
+{
+  display: inline-block;  /* <a> elements are inline-block elements so that the folloeing "display: flex;" is available. */
+  font-weight: bold;
+}
+
+.first-lists > li
+{
+  display: flex;
+  flex-direction: column;  /* Place the second-level links and the first-level links vertically. */
+  align-items: center;  /* Set the first-level links in the center of the width of the second-level links. */
+}
+
+
+.first-lists > li > .hidden
+{
+  display: none;  /* Make the second-level links invisible. */
+  position: absolute;  /* The position of the second-level links is absolute so that they don't move by being clicked. */
+}
+
+.first-lists > li:hover > .hidden
+{
+  display: block; /* Make the second-level links visible only when each first-level link is on hover.  */
+  background-color: #e4582e;  /* Set the background colour when each first-level link is on hover. */
+	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);  /* Set the light shadow in the y-axis direction when each first-level link is on hover. */
+}
+
+.hidden > ul
+{
+  display: flex;
+  flex-direction: column;  /* Place the second-level links and the first-level links vertically. */
+  align-items: center;  /* Set the first-level links in the center of the width of the second-level links. */
+  padding: 0px;  /* Delete the padding left side of <ul> elements. */
+}
+
+.hidden > ul > li
+{
+  width: 260px;  /* Each second-level link has the same width. */
+  text-align: center;  /* Set each text of second-level links in the center. */
+}
+
+.hidden > ul > li > a
+{
+  color:#ffcfc3;
+}
+
+abbr
+{
+  cursor: help;  /* The shape of cursor is "?." */
+}
+
+.chocolate
+{
+  float: right;
+  margin-left: 50px;
+}
+
+
+/* 完成のイメージ図 */
+
+/* https://www.kerenor.jp/hover-effects-with-css/ */
+
+/* https://www.bing.com/images/search?view=detailV2&ccid=obQtlY8x&id=B8D8B11FCAE7A68B91F55212948886CE28B10B77&thid=OIP.obQtlY8xxBqj750XWk4-NQHaCs&mediaurl=https%3a%2f%2ftechcommunity.microsoft.com%2fgxcuf89792%2fattachments%2fgxcuf89792%2fSharePoint_General%2f27073%2f2%2fparentsite.png&exph=552&expw=1513&q=+second-level+link+&simid=608022921270591944&ck=091A82DADAFFD0EB78D9B4C5C6486DAB&selectedIndex=1&FORM=IRPRST&ajaxhist=0 */
